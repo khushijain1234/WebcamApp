@@ -32,7 +32,6 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    bottom: 3rem;
   }
   
   .circle-button{
@@ -69,10 +68,16 @@
     }
     .img-gallery{
         .img-container{
+            display: flex;
+            justify-content: center;
             .image{
-                width: 90%;
+                width: 75%;
+                max-width: 75%;
             }
         }
+    }
+    .controls-buttons{
+        bottom: 0rem !important;
     }
   }
   

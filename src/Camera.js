@@ -10,7 +10,7 @@ import "./style.css";
 
 export const Camera = ({ images, onCapture }) => {
   const [zoomLevel, setZoomLevel] = useState(1);
-  const [cameraType, setCameraType] = useState("environment");
+  const [cameraType, setCameraType] = useState("user");
   const [aspectRatio, setAspectRatio] = useState(16 / 9);
   const videoRef = useRef(null); //Store Video refrence
   const containerRef = useRef(null); //Store Camera Container Reference
@@ -112,7 +112,7 @@ export const Camera = ({ images, onCapture }) => {
         height="100%"
         style={{ objectFit: "cover" }}
       />
-      <div className="controls-buttons">
+      <div className="controls-buttons" style={{bottom: `${aspectRatio == 1? '7rem': '0rem'}`}}>
         <div>
           <button
             onClick={() => setZoomLevel((prev) => Math.min(3, prev + 0.5))}
