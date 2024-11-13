@@ -18,7 +18,7 @@ const Main = ({ images, setImages }) => {
         />
       ) : (
         <div className="initial-page">
-          <h1>Image Capture & Display Application</h1>
+          <h1>Image Capture & Display Application </h1>
           <button className="button" onClick={() => setStartCamera(true)}>
             Start Webcam
           </button>
