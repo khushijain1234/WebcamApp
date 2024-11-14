@@ -112,7 +112,7 @@ export const Camera = ({ images, onCapture }) => {
         height="100%"
         style={{ objectFit: "cover" }}
       />
-      <div className="controls-buttons" style={{bottom: `${aspectRatio === 1? '7rem': '0rem'}`}}>
+      <div className="controls-buttons" style={{bottom: `${aspectRatio === 1? '9rem': '0rem'}`}}>
         <div>
           <button
             onClick={() => setZoomLevel((prev) => Math.min(3, prev + 0.5))}
